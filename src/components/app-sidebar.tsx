@@ -31,7 +31,7 @@ import {
 const data = {
   user: {
     name: "Hasiru Amarasooriya",
-    email: "hasiru@gmail.com",
+    email: "hasiru@kumudu.com",
     avatar: "/avatars/shadcn.jpg",
   },
   teams: [
