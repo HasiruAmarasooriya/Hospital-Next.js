@@ -27,26 +27,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en suppressHydrationWarning">
+    <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen w-screen flex`}
       >
         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-        <SidebarProvider>
-      <AppSidebar />
-      <main>
-      <ModeToggle/>
-        <SidebarTrigger />
-        {children}
-      </main>
-    </SidebarProvider>
-    </ThemeProvider>
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SidebarProvider>
+            {/* Sidebar on the left */}
+            <AppSidebar />
+            <SidebarTrigger />
+
+            {/* Main content on the right */}
+            <main className="flex-1 flex flex-col h-screen overflow-hidden bg-gray-50 dark:bg-gray-900">
+              <div className="flex justify-end p-4">
+                <ModeToggle />
+                
+              </div>
+              {/* Scrollable page content */}
+              <div className="flex-1 overflow-y-auto p-6">{children}</div>
+            </main>
+          </SidebarProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
 }
+
