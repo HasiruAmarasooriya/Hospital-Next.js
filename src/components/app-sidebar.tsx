@@ -51,7 +51,7 @@ const data = {
       items: [
         {
           title: "Home Page",
-          url: "#",
+          url: "/home",
         },
         {
           title: "About Us",
