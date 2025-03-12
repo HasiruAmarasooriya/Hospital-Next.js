@@ -160,6 +160,29 @@ const data = {
         },
       ],
     },
+    {
+      title: "Login",
+      url: "/auth/login",
+      icon: Bot,
+      items: [
+        {
+          title: "Login",
+          url: "/auth/login",
+        },
+        {
+          title: "register",
+          url: "/auth/register",
+        },
+        {
+          title: "X-Ray",
+          url: "#",
+        },
+        {
+          title: "Admission",
+          url: "#",
+        },
+      ],
+    },
    
   ]
   
