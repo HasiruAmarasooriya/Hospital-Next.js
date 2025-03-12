@@ -44,11 +44,47 @@ const data = {
   ],
   navMain: [
     {
+      title: "Main Pages",
+      url: "#",
+      icon: SquareTerminal,
+      isActive: true,
+      items: [
+        {
+          title: "Home Page",
+          url: "#",
+        },
+        {
+          title: "About Us",
+          url: "#",
+        },
+        {
+          title: "Services",
+          url: "#",
+        },
+        {
+          title: "Contact Us",
+          url: "#",
+        },
+        {
+          title: "BLOG",
+          url: "#",
+        },
+        
+      ],
+    },
+    {
       title: "Dashboard",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
-      
+      items: [
+        {
+          title: "Dashboard",
+          url: "#",
+        },
+        
+        
+      ],
     },
     {
       title: "Cashier",
