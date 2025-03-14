@@ -55,7 +55,7 @@ const data = {
         },
         {
           title: "About Us",
-          url: "#",
+          url: "/about",
         },
         {
           title: "Services",
