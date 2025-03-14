@@ -1,12 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaHospitalAlt, FaUserMd, FaAmbulance, FaHeartbeat } from "react-icons/fa";
+import {
+  FaHospitalAlt,
+  FaUserMd,
+  FaAmbulance,
+  FaHeartbeat,
+} from "react-icons/fa";
 
 export default function About() {
   return (
     <section className="relative bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300 overflow-hidden">
-
       {/* Background Decorative Circles */}
       <div className="absolute w-96 h-96 bg-blue-500 rounded-full opacity-20 blur-3xl top-[-50px] left-[-100px]"></div>
       <div className="absolute w-96 h-96 bg-cyan-500 rounded-full opacity-20 blur-3xl bottom-[-50px] right-[-100px]"></div>
@@ -30,7 +34,12 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="text-center text-lg md:text-xl max-w-3xl mx-auto text-gray-700 dark:text-gray-300 mb-16"
         >
-          Serving the community for over <strong className="text-blue-600 dark:text-cyan-400">20 years</strong>, Kumudu Hospital is committed to delivering compassionate and professional healthcare. We combine <strong>state-of-the-art technology</strong> with highly skilled medical professionals to provide world-class service.
+          Serving the community for over{" "}
+          <strong className="text-blue-600 dark:text-cyan-400">20 years</strong>
+          , Kumudu Hospital is committed to delivering compassionate and
+          professional healthcare. We combine{" "}
+          <strong>state-of-the-art technology</strong> with highly skilled
+          medical professionals to provide world-class service.
         </motion.p>
 
         {/* Stats Section */}
@@ -44,7 +53,9 @@ export default function About() {
               className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
             >
               <item.icon className="text-5xl text-blue-600 dark:text-cyan-400 mb-4" />
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white">{item.value}</h3>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+                {item.value}
+              </h3>
               <p className="text-gray-600 dark:text-gray-400">{item.label}</p>
             </motion.div>
           ))}
@@ -79,8 +90,12 @@ export default function About() {
                   {feature.icon}
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-2">{feature.title}</h4>
-                  <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
+                  <h4 className="text-xl font-semibold mb-2">
+                    {feature.title}
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -94,11 +109,13 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="text-center mt-16"
         >
-          <a href="/about" className="inline-block px-6 py-2 text-lg font-semibold bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white rounded-lg shadow-lg transition-all duration-300">
+          <a
+            href="/about"
+            className="inline-block px-6 py-2 text-lg font-semibold bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white rounded-lg shadow-lg transition-all duration-300"
+          >
             Learn More
           </a>
         </motion.div>
-
       </div>
     </section>
   );

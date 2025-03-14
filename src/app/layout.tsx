@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { SidebarProvider , SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar"
-import { ThemeProvider } from "@/components/theme-provider"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle";
 
 const geistSans = Geist({
@@ -46,7 +46,6 @@ export default function RootLayout({
             <main className="flex-1 flex flex-col h-screen overflow-hidden bg-gray-50 dark:bg-gray-900">
               <div className="flex justify-end p-4">
                 <ModeToggle />
-                
               </div>
               {/* Scrollable page content */}
               <div className="flex-1 overflow-y-auto p-6">{children}</div>
@@ -57,4 +56,3 @@ export default function RootLayout({
     </html>
   );
 }
-

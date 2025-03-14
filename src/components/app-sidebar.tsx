@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
   AudioWaveform,
   BookOpen,
@@ -13,19 +13,19 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
-} from "lucide-react"
+} from "lucide-react";
 
-import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+import { NavMain } from "@/components/nav-main";
+import { NavProjects } from "@/components/nav-projects";
+import { NavUser } from "@/components/nav-user";
+import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
 // This is sample data.
 const data = {
@@ -40,7 +40,6 @@ const data = {
       logo: GalleryVerticalEnd,
       plan: "Matale",
     },
-    
   ],
   navMain: [
     {
@@ -59,7 +58,7 @@ const data = {
         },
         {
           title: "Services",
-          url: "#",
+          url: "/services",
         },
         {
           title: "Contact Us",
@@ -69,7 +68,6 @@ const data = {
           title: "BLOG",
           url: "#",
         },
-        
       ],
     },
     {
@@ -82,8 +80,6 @@ const data = {
           title: "Dashboard",
           url: "#",
         },
-        
-        
       ],
     },
     {
@@ -183,10 +179,8 @@ const data = {
         },
       ],
     },
-   
-  ]
-  
-}
+  ],
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -196,12 +190,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }

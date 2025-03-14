@@ -119,9 +119,7 @@ export default function Hero() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <Button
-            className="mt-6 px-8 py-4 text-base md:text-lg bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white shadow-lg shadow-blue-500/50 dark:shadow-cyan-500/50 rounded-xl transition-all duration-300"
-          >
+          <Button className="mt-6 px-8 py-4 text-base md:text-lg bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white shadow-lg shadow-blue-500/50 dark:shadow-cyan-500/50 rounded-xl transition-all duration-300">
             Book an Appointment
           </Button>
         </motion.div>
