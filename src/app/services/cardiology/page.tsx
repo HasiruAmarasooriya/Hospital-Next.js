@@ -5,6 +5,7 @@ export default function Cardiology() {
   return (
     <section className="py-20 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6">
+        
         {/* Section 1: Cardiology Introduction */}
         <div className="text-center mb-12 fadeInUp">
           <FaHeartbeat className="text-6xl text-blue-600 mx-auto mb-4" />
