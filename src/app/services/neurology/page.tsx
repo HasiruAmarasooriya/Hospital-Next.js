@@ -7,7 +7,7 @@ export default function Neurology() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section 1: Neurology Introduction */}
         <div className="text-center mb-16 fadeInUp">
-          <FaBrain className="text-6xl text-indigo-600 mx-auto mb-4" />
+          <FaBrain className="text-6xl text-green-600 mx-auto mb-4" />
           <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
             Neurology at Kumudu Hospital
           </h2>
@@ -119,7 +119,7 @@ export default function Neurology() {
             Take control of your brain health today. Book a consultation with
             one of our expert neurologists.
           </p>
-          <button className="bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
+          <button className="bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
             Schedule Appointment
           </button>
         </div>

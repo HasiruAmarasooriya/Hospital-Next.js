@@ -7,7 +7,7 @@ export default function Radiology() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section 1: Radiology Introduction */}
         <div className="text-center mb-12 fadeInUp">
-          <FaRadiationAlt className="text-6xl text-blue-600 mx-auto mb-4" />
+          <FaRadiationAlt className="text-6xl text-pink-600 mx-auto mb-4" />
           <h2 className="text-4xl font-semibold text-gray-900 dark:text-white mb-4">
             Radiology at Kumudu Hospital
           </h2>
@@ -113,7 +113,7 @@ export default function Radiology() {
             Schedule an appointment with one of our expert radiologists to
             discuss your imaging needs or concerns.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
+          <button className="bg-pink-600 hover:bg-pink-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
             Schedule Appointment
           </button>
         </div>

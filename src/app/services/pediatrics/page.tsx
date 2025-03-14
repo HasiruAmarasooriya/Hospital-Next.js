@@ -7,7 +7,7 @@ export default function Pediatrics() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section 1: Pediatrics Introduction */}
         <div className="text-center mb-12 fadeInUp">
-          <FaBaby className="text-6xl text-blue-600 mx-auto mb-4" />
+          <FaBaby className="text-6xl text-yellow-600 mx-auto mb-4" />
           <h2 className="text-4xl font-semibold text-gray-900 dark:text-white mb-4">
             Pediatrics at Kumudu Hospital
           </h2>
@@ -111,7 +111,7 @@ export default function Pediatrics() {
             Ready to take the next step in your child's health? Book a
             consultation with one of our pediatric specialists today.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
+          <button className="bg-yellow-600 hover:bg-yellow-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
             Schedule Appointment
           </button>
         </div>

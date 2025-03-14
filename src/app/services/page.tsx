@@ -6,7 +6,7 @@ import {
   FaBaby,
   FaBone,
   FaAmbulance,
-  FaXRay,
+  FaRadiationAlt,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -39,7 +39,7 @@ export default function Services() {
       title: "Radiology",
       description:
         "High-precision imaging and diagnostics, ensuring accurate diagnosis and treatment plans. We offer MRI, CT scans, X-rays, and more.",
-      icon: <FaXRay className="text-4xl text-purple-600" />,
+      icon: <FaRadiationAlt className="text-4xl text-pink-600" />,
       url: "/services/radiology", // Direct URL
     },
     {

@@ -7,7 +7,7 @@ export default function Orthopedics() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section 1: Orthopedics Introduction */}
         <div className="text-center mb-12 fadeInUp">
-          <FaBone className="text-6xl text-blue-600 mx-auto mb-4" />
+          <FaBone className="text-6xl text-orange-600 mx-auto mb-4" />
           <h2 className="text-4xl font-semibold text-gray-900 dark:text-white mb-4">
             Orthopedics at Kumudu Hospital
           </h2>
@@ -110,7 +110,7 @@ export default function Orthopedics() {
             Take the first step toward improved mobility and pain-free living.
             Book a consultation with one of our orthopedic specialists today.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white py-3 px-8 rounded-lg text-lg transform hover:scale-105 transition-all">
             Schedule Appointment
           </button>
         </div>
