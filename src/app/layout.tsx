@@ -61,7 +61,6 @@ export default function RootLayout({
               <AppSidebar />
               <SidebarTrigger />
               <main className="flex flex-col flex-1">
-                {/* Move ModeToggle to left side in dashboard */}
                 <div className="ml-6 mt-4">
                   <ModeToggle />
                 </div>
@@ -79,7 +78,17 @@ export default function RootLayout({
                     href="/"
                     className="flex items-center justify-start space-x-2 text-xl font-bold text-gray-800 dark:text-white"
                   >
-                    <Stethoscope className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                    <motion.div
+                      animate={{ y: [0, -10, 0] }}  // Bounce effect
+                      transition={{
+                        repeat: Infinity,  // Repeats infinitely
+                        repeatType: "loop", // Loop the animation
+                        duration: 3,  // Time for one complete bounce
+                        ease: "easeInOut", // Smooth bounce
+                      }}
+                    >
+                      <Stethoscope className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                    </motion.div>
                     <span>HOSPITAL</span>
                   </Link>
 
@@ -107,7 +116,17 @@ export default function RootLayout({
                     href="/"
                     className="flex items-center space-x-3 text-2xl font-bold text-gray-800 dark:text-white"
                   >
-                    <Stethoscope className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                    <motion.div
+                      animate={{ y: [0, -10, 0] }}  // Bounce effect
+                      transition={{
+                        repeat: Infinity,  // Repeats infinitely
+                        repeatType: "loop", // Loop the animation
+                        duration: 3,  // Time for one complete bounce
+                        ease: "easeInOut", // Smooth bounce
+                      }}
+                    >
+                      <Stethoscope className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                    </motion.div>
                     <span>HOSPITAL</span>
                   </Link>
 
@@ -135,7 +154,6 @@ export default function RootLayout({
                                 ? "w-full"
                                 : "w-0 group-hover:w-full"
                             }`}
-
                           ></span>
                         </Link>
                       );
