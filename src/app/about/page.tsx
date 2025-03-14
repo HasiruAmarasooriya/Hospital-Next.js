@@ -19,7 +19,7 @@ export default function AboutMore() {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl font-extrabold text-center mb-8 bg-gradient-to-r from-blue-600 to-cyan-400 text-transparent bg-clip-text"
         >
-          About Kumudu Hospital - Our Journey
+          About - Our Journey
         </motion.h2>
 
         {/* Story Section */}
