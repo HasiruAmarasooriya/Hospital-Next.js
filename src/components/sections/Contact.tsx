@@ -1,14 +1,25 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-10">
-          Contact Us
-        </h2>
+    <section className="relative bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+      {/* Background Decorative Circles */}
+      <div className="absolute w-96 h-96 bg-blue-500 rounded-full opacity-20 blur-3xl top-[-50px] left-[-100px]"></div>
+      <div className="absolute w-96 h-96 bg-cyan-500 rounded-full opacity-20 blur-3xl bottom-[-50px] right-[-100px]"></div>
+      {/* Main Container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+        {/* Title */}
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-5xl md:text-4xl font-extrabold text-center mb-8 bg-gradient-to-r from-blue-600 to-cyan-400 text-transparent bg-clip-text"
+        >
+          CONTACT US
+        </motion.h2>
         <form className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
