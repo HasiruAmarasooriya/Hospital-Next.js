@@ -180,7 +180,7 @@ const DoctorSection: React.FC = () => {
       <div className="overflow-hidden relative z-10">
         <div
           ref={scrollRef}
-          className="flex space-x-10 overflow-x-auto scroll-smooth no-scrollbar pb-6"
+          className="flex space-x-10 overflow-x-auto scroll-smooth no-scrollbar pb-4"
         >
           {doctors.map((doctor, index) => (
             <motion.div
