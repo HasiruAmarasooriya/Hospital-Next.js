@@ -70,7 +70,7 @@ export default function Services() {
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl md:text-5xl font-extrabold text-center mb-8 bg-gradient-to-r from-blue-600 to-cyan-400 text-transparent bg-clip-text"
+          className="text-5xl md:text-5xl font-extrabold text-center mb-8 bg-gradient-to-r from-blue-500 to-cyan-500 text-transparent bg-clip-text"
         >
           Our Services
         </motion.h2>
