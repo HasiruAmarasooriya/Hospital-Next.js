@@ -98,7 +98,7 @@ export default function Services() {
               <Link href={service.url} passHref>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
-                  className="w-full bg-blue-400 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white dark:text-black py-2 rounded-lg mt-4"
+                  className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 text-white dark:text-white py-2 rounded-lg mt-4"
                 >
                   Read More
                 </motion.button>
