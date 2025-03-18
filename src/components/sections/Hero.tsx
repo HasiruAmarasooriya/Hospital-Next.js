@@ -23,7 +23,7 @@ const slides = [
     description: "Our team of professionals ensures world-class healthcare.",
   },
   {
-    image: "/10.jpg",
+    image: "/6.jpg",
     text: "Compassionate Healthcare",
     description: "We combine compassion and technology for better outcomes.",
   },
