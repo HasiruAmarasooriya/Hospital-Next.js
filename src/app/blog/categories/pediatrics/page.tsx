@@ -4,9 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import Footer from "@/components/sections/Footer";
 
 export default function PediatricsPage() {
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-4 md:p-8">
       {/* Background graphics */}
       <Image
@@ -40,20 +42,15 @@ export default function PediatricsPage() {
         className="relative z-10 max-w-6xl mx-auto my-12"
       >
         <h2 className="text-3xl font-bold text-blue-600 dark:text-blue-400 text-center mb-6">Educational Videos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
             src="https://www.youtube.com/embed/YnbcVw9Zm20"
             title="Child Development Basics"
             allowFullScreen
           ></iframe>
-          <iframe
-            className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/VIDEO_ID_2"
-            title="Common Pediatric Illnesses"
-            allowFullScreen
-          ></iframe>
-        </div>
+          
+       
       </motion.div>
 
       {/* Content Section */}
@@ -106,5 +103,7 @@ export default function PediatricsPage() {
         </p>
       </motion.div>
     </div>
+    <Footer />
+    </section>
   );
 }

@@ -4,9 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import Footer from "@/components/sections/Footer";
 
 export default function NeurologyPage() {
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-4 md:p-8">
       {/* Background graphics */}
       <Image
@@ -45,28 +47,17 @@ export default function NeurologyPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/ndFKtZgGvo0"
+            src="https://www.youtube.com/embed/dV48gvV4tUM"
             title="Brain Anatomy and Functions"
             allowFullScreen
           ></iframe>
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/qT9N_2r45pg"
+            src="https://www.youtube.com/embed/qQBUI1-wRQE"
             title="Stroke: Symptoms and Treatment"
             allowFullScreen
           ></iframe>
-          <iframe
-            className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/PHx9jo_YU2s"
-            title="Parkinson's Disease Explained"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/7NUC5a1pKF0"
-            title="Epilepsy - Causes and Treatment"
-            allowFullScreen
-          ></iframe>
+         
         </div>
       </motion.div>
 
@@ -130,5 +121,7 @@ export default function NeurologyPage() {
         </ul>
       </motion.div>
     </div>
+    <Footer />
+    </section>
   );
 }

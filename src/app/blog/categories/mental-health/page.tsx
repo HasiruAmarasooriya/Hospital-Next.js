@@ -3,9 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Footer from "@/components/sections/Footer";
 
 export default function MentalHealthPage() {
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-4 md:p-8">
       <Image
         src="/blog/mental2-health.jpg"
@@ -77,5 +79,7 @@ export default function MentalHealthPage() {
         </motion.div>
       </div>
     </div>
+    <Footer />
+    </section>
   );
 }

@@ -3,9 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Footer from "@/components/sections/Footer";
 
 export default function EmergencyCarePage() {
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-4 md:p-8">
       <Image
         src="/blog/emergency-care.jpg"
@@ -37,16 +39,11 @@ export default function EmergencyCarePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/NdAcoUM3hKc"
+            src="https://www.youtube.com/embed/9PjWLStxWCc"
             title="Emergency Care Video 1"
             allowFullScreen
           />
-          <iframe
-            className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/cA4yOa8JjcY"
-            title="Emergency Care Video 2"
-            allowFullScreen
-          />
+          
         </div>
       </motion.div>
 
@@ -77,5 +74,8 @@ export default function EmergencyCarePage() {
         </motion.div>
       </div>
     </div>
+
+    <Footer />
+    </section>
   );
 }

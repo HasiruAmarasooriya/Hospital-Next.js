@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/sections/Footer";
 import { motion } from "framer-motion";
 import { FaHistory, FaHospitalAlt, FaUserMd, FaHeart } from "react-icons/fa";
 
@@ -122,7 +123,9 @@ export default function AboutMore() {
             Contact Us for More Information
           </motion.a>
         </div>
+       
       </div>
+      <Footer />
     </section>
   );
 }

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Footer from "@/components/sections/Footer";
 
 const container = {
   hidden: { opacity: 0 },
@@ -24,6 +25,7 @@ const item = {
 
 export default function ContactPage() {
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 flex items-center justify-center p-6 transition-colors duration-500 ease-in-out">
 
       {/* Optional Subtle Background Graphic */}
@@ -134,5 +136,7 @@ export default function ContactPage() {
         </motion.div>
       </motion.div>
     </div>
+    <Footer />
+    </section>
   );
 }

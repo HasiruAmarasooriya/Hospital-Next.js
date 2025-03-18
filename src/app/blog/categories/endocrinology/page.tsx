@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import Footer from "@/components/sections/Footer";
 
 export default function EndocrinologyPage() {
   return (
@@ -45,26 +46,14 @@ export default function EndocrinologyPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/l5O6ukmYiIc"
+            src="https://www.youtube.com/embed/YcPicFL5Jnw"
             title="Introduction to Endocrine System"
             allowFullScreen
           ></iframe>
           <iframe
             className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/q0LeUC7uMHM"
+            src="https://www.youtube.com/embed/0GSRbmcNh3A"
             title="Diabetes Explained"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/NXhGkL0WZpM"
-            title="Hormonal Imbalance Overview"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            className="w-full h-64 rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/kxdjRHDL4do"
-            title="Thyroid Gland Functions"
             allowFullScreen
           ></iframe>
         </div>
@@ -97,11 +86,11 @@ export default function EndocrinologyPage() {
             Common Endocrine Disorders
           </h2>
           <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-300">
-            <li>• **Diabetes Mellitus** - A chronic condition affecting blood sugar regulation.</li>
-            <li>• **Hypothyroidism / Hyperthyroidism** - Under or overproduction of thyroid hormones.</li>
-            <li>• **Polycystic Ovary Syndrome (PCOS)** - Hormonal imbalance in women affecting ovaries.</li>
-            <li>• **Cushing’s Syndrome** - Excess cortisol production leading to weight gain and skin changes.</li>
-            <li>• **Adrenal Insufficiency** - Inadequate production of hormones by the adrenal glands.</li>
+            <li>• <strong>Diabetes Mellitus</strong> - A chronic condition affecting blood sugar regulation.</li>
+            <li>• <strong>Hypothyroidism / Hyperthyroidism</strong> - Under or overproduction of thyroid hormones.</li>
+            <li>• <strong>Polycystic Ovary Syndrome (PCOS)</strong> - Hormonal imbalance in women affecting ovaries.</li>
+            <li>• <strong>Cushing’s Syndrome</strong> - Excess cortisol production leading to weight gain and skin changes.</li>
+            <li>• <strong>Adrenal Insufficiency</strong> - Inadequate production of hormones by the adrenal glands.</li>
           </ul>
         </motion.div>
       </div>
@@ -178,12 +167,15 @@ export default function EndocrinologyPage() {
           Endocrinology Advancements
         </h2>
         <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-          <li>• **Insulin Pumps & CGMs** - Modern tools for managing diabetes effectively.</li>
-          <li>• **Hormone Replacement Therapy (HRT)** - Treatments for hormonal imbalances in menopause and other conditions.</li>
-          <li>• **Biologic Drugs** - New medications targeting autoimmune endocrine disorders.</li>
-          <li>• **Tele-Endocrinology** - Remote care and management of chronic endocrine diseases.</li>
+          <li>• <strong>Insulin Pumps & CGMs</strong> - Modern tools for managing diabetes effectively.</li>
+          <li>• <strong>Hormone Replacement Therapy (HRT)</strong> - Treatments for hormonal imbalances in menopause and other conditions.</li>
+          <li>• <strong>Biologic Drugs</strong> - New medications targeting autoimmune endocrine disorders.</li>
+          <li>• <strong>Tele-Endocrinology</strong> - Remote care and management of chronic endocrine diseases.</li>
         </ul>
       </motion.div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

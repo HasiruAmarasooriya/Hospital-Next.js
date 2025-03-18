@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "@/components/sections/Footer";
 
 // Helper function to create slugs safely (replaces spaces, apostrophes, etc.)
 const slugify = (str: string) =>
@@ -123,6 +124,7 @@ export default function BlogPage() {
   );
 
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-4 md:p-8">
       {/* Background graphics */}
       <Image
@@ -267,6 +269,10 @@ export default function BlogPage() {
           </div>
         </aside>
       </div>
+      
     </div>
+    <Footer />
+    </section>
+    
   );
 }

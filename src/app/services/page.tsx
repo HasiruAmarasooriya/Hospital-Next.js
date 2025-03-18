@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import Footer from "@/components/sections/Footer";
 
 export default function Services() {
   const services = [
@@ -107,6 +108,7 @@ export default function Services() {
           ))}
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

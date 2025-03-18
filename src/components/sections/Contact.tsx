@@ -56,7 +56,7 @@ export default function ContactPage() {
               <Phone className="text-blue-600 dark:text-blue-400 w-6 h-6" />
               <div>
                 <p className="text-lg font-medium text-gray-800 dark:text-gray-100">Emergency Hotline</p>
-                <p className="text-gray-600 dark:text-gray-300">+94 0662222221</p>
+                <p className="text-gray-600 dark:text-gray-300">+94 0662222244</p>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
               <Mail className="text-blue-600 dark:text-blue-400 w-6 h-6" />
               <div>
                 <p className="text-lg font-medium text-gray-800 dark:text-gray-100">Email</p>
-                <p className="text-gray-600 dark:text-gray-300">kumuduhospita@gmail.com</p>
+                <p className="text-gray-600 dark:text-gray-300">kumuduhospitalmatale@gmail.com</p>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function ContactPage() {
               <MapPin className="text-blue-600 dark:text-blue-400 w-6 h-6" />
               <div>
                 <p className="text-lg font-medium text-gray-800 dark:text-gray-100">Location</p>
-                <p className="text-gray-600 dark:text-gray-300">123 kandy road, matale</p>
+                <p className="text-gray-600 dark:text-gray-300">48, A9, Matale Road Sri Lanka</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function ContactPage() {
             <a href="#" className="hover:scale-105 transition-transform">
               <Linkedin className="w-5 h-5 text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" />
             </a>
-            <a href="#" className="hover:scale-105 transition-transform">
+            <a href="https://www.facebook.com/Kumudu.Hospital.Matale" className="hover:scale-105 transition-transform">
               <Facebook className="w-5 h-5 text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" />
             </a>
             <a href="#" className="hover:scale-105 transition-transform">

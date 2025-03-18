@@ -4,9 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import Footer from "@/components/sections/Footer";
 
 export default function SurgeryPage() {
   return (
+    <section>
     <div className="relative min-h-screen w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-4 md:p-8">
       {/* Background graphics */}
       <Image
@@ -130,5 +132,7 @@ export default function SurgeryPage() {
         </ul>
       </motion.div>
     </div>
+    <Footer />
+    </section>
   );
 }
