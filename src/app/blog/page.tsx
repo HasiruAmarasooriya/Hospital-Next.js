@@ -9,6 +9,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+// Helper function to create slugs safely (replaces spaces, apostrophes, etc.)
+const slugify = (str: string) =>
+  str.toLowerCase().replace(/[\s’']/g, "-");
+
 // Blog post dummy data
 const blogPosts = [
   {
@@ -61,18 +65,9 @@ const blogPosts = [
     author: "Dr. Emily Carter",
     date: "February 15, 2025",
   },
+  
   {
     id: 6,
-    title: "Comprehensive Women’s Health Guide",
-    excerpt:
-      "Learn about women’s health through different stages of life from our experts.",
-    image: "/blog/womens-health.jpg",
-    category: "Women’s Health",
-    author: "Dr. Olivia Adams",
-    date: "February 10, 2025",
-  },
-  {
-    id: 7,
     title: "The Role of Mental Health in Healing",
     excerpt:
       "Understand how mental health directly impacts physical recovery and overall wellness.",
@@ -82,7 +77,7 @@ const blogPosts = [
     date: "January 30, 2025",
   },
   {
-    id: 8,
+    id: 7,
     title: "Emergency Room Success Stories",
     excerpt: "Hear real-life success stories from our emergency care team.",
     image: "/blog/emergency.jpg",
@@ -92,14 +87,13 @@ const blogPosts = [
   },
 ];
 
-// Categories
+// ✅ Correct category list
 const categories = [
   "Cardiology",
   "Pediatrics",
   "Surgery",
   "Neurology",
   "Endocrinology",
-  "Women’s Health",
   "Mental Health",
   "Emergency Care",
 ];
@@ -122,7 +116,6 @@ const item = {
 export default function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter blog posts based on the search term
   const filteredPosts = blogPosts.filter(
     (post) =>
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -204,11 +197,7 @@ export default function BlogPage() {
                     asChild
                     className="mt-4 bg-blue-600 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-400 w-full"
                   >
-                    <Link
-                      href={`/blog/categories/${post.category
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`}
-                    >
+                    <Link href={`/blog/categories/${slugify(post.category)}`}>
                       Read More
                     </Link>
                   </Button>
@@ -239,11 +228,7 @@ export default function BlogPage() {
                   key={idx}
                   className="text-sm hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer transition"
                 >
-                  <Link
-                    href={`/blog/categories/${category
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}`}
-                  >
+                  <Link href={`/blog/categories/${slugify(category)}`}>
                     {category}
                   </Link>
                 </li>
@@ -267,16 +252,16 @@ export default function BlogPage() {
           </div>
 
           {/* Newsletter */}
-          <div className="bg-gradient-to-br from-blue-600 to-blue-400 dark:from-blue-500 dark:to-blue-300 p-8 rounded-2xl text-white text-center shadow-md flex flex-col space-y-4">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-400 dark:from-gray-700 dark:to-gray-900 p-8 rounded-2xl text-white text-center shadow-md flex flex-col space-y-4">
             <h3 className="font-semibold text-2xl">Subscribe</h3>
             <p className="text-sm">
               Get health tips & hospital updates in your inbox.
             </p>
             <Input
               placeholder="Enter your email"
-              className="text-gray-800 py-2 px-4 rounded-md w-full"
+              className="text-gray-900 dark:bg-gray-500 py-2 px-4 rounded-md w-full"
             />
-            <Button className="bg-white text-blue-600 font-semibold hover:bg-gray-200 w-full py-2 rounded-md">
+            <Button className="bg-black text-white font-semibold hover:bg-cyan-500 hover:text-black w-full py-2 rounded-md">
               Subscribe
             </Button>
           </div>

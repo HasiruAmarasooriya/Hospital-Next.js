@@ -8,12 +8,12 @@ import { useTheme } from "next-themes";
 
 const slides = [
   {
-    image: "/7.jpg",
+    image: "/8.jpg",
     text: "Welcome to Kumudu Hospital",
     description: "Your Trusted Healthcare Partner",
   },
   {
-    image: "/1.jpg",
+    image: "/9.jpg",
     text: "Advanced Medical Facilities",
     description: "Delivering compassionate care with modern equipment.",
   },
@@ -23,7 +23,7 @@ const slides = [
     description: "Our team of professionals ensures world-class healthcare.",
   },
   {
-    image: "/6.jpg",
+    image: "/10.jpg",
     text: "Compassionate Healthcare",
     description: "We combine compassion and technology for better outcomes.",
   },
