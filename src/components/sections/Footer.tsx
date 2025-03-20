@@ -111,28 +111,28 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 href="https://www.facebook.com/Kumudu.Hospital.Matale"
-                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 transition-colors"
+                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 hover:dark:text-white transition-colors"
               >
                 <Facebook size={20} />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 href="#"
-                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 transition-colors"
+                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 hover:dark:text-white transition-colors"
               >
                 <Twitter size={20} />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 href="#"
-                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 transition-colors"
+                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 hover:dark:text-white transition-colors"
               >
                 <Linkedin size={20} />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.2 }}
                 href="#"
-                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 transition-colors"
+                className="bg-white text-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-200 hover:text-white dark:bg-gray-800 dark:text-blue-400 hover:dark:bg-blue-500 hover:dark:text-white transition-colors"
               >
                 <Instagram size={20} />
               </motion.a>
@@ -144,7 +144,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="relative z-10 py-6 text-center text-xs md:text-sm text-gray-700 dark:text-gray-300">
-          &copy; {new Date().getFullYear()} Kumudu Hospital. All rights reserved. | Designed with ❤️ in Sri Lanka
+          &copy; {new Date().getFullYear()} Kumudu Hospital. All rights reserved. | Designed with ❤️ in Techwire Lanka
         </div>
 
         {/* Floating Decorative Elements */}
