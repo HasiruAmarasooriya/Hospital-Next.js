@@ -81,7 +81,7 @@ export default function ContactPage() {
             <a href="#" className="hover:scale-105 transition-transform">
               <Linkedin className="w-5 h-5 text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" />
             </a>
-            <a href="https://www.facebook.com/Kumudu.Hospital.Matale" className="hover:scale-105 transition-transform">
+            <a href="https://www.facebook.com/profile.php?id=61553716451286" className="hover:scale-105 transition-transform">
               <Facebook className="w-5 h-5 text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400" />
             </a>
             <a href="#" className="hover:scale-105 transition-transform">
