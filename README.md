@@ -40,10 +40,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   HOME PAGE
 
 <img width="1883" height="812" alt="Screenshot 2025-07-22 001602" src="https://github.com/user-attachments/assets/c6bcb4f9-4b6d-4fc5-8524-76867dacb6dc" />
-<img width="1888" height="943" alt="Screenshot 2025-07-22 001622" src="https://github.com/user-attachments/assets/308dba79-4a70-4c86-8343-427df758d2b8" />
-<img width="1889" height="928" alt="Screenshot 2025-07-22 001638" src="https://github.com/user-attachments/assets/944c4b35-ffb1-4619-8398-12b1068ab526" />
-<img width="1892" height="862" alt="Screenshot 2025-07-22 001652" src="https://github.com/user-attachments/assets/e32aba33-5389-41e3-ad01-cfe8567999ab" />
-<img width="1888" height="922" alt="Screenshot 2025-07-22 001710" src="https://github.com/user-attachments/assets/e11cbb19-f87d-41d7-8769-09887cc64358" />
-<img width="1886" height="911" alt="Screenshot 2025-07-22 001721" src="https://github.com/user-attachments/assets/0a32a292-bbbc-421f-a4f2-209ff62f14a8" />
+<img width="1850" height="847" alt="Screenshot 2025-07-22 002155" src="https://github.com/user-attachments/assets/0c48aa69-edb7-4bb3-85f8-d4d06eddacfa" />
+<img width="1876" height="827" alt="Screenshot 2025-07-22 002210" src="https://github.com/user-attachments/assets/4d2d2599-1c1e-4812-a10d-389f49a2c100" />
+<img width="1876" height="757" alt="Screenshot 2025-07-22 002224" src="https://github.com/user-attachments/assets/e0b503b9-4cb6-4a9f-a9d5-1be03b0803cf" />
+<img width="1866" height="826" alt="Screenshot 2025-07-22 002237" src="https://github.com/user-attachments/assets/75a824b7-0121-4a38-87b8-c4762b7bb4e9" />
+<img width="1871" height="828" alt="Screenshot 2025-07-22 002247" src="https://github.com/user-attachments/assets/08feeb76-13bf-4c9b-8143-92562353dd97" />
+
 
 
